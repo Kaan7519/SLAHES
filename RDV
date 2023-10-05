@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prise de Rendez-vous</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Prise de Rendez-vous</h2>
+        <form id="appointment-form">
+            <div class="form-group">
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse email :</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date du rendez-vous :</label>
+                <input type="text" id="date" name="date" placeholder="Format: DD/MM/YYYY" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Réserver le rendez-vous">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Vous pouvez ajouter un script JavaScript ici pour gérer l'envoi du formulaire,
+        // par exemple, en utilisant AJAX pour envoyer les données du formulaire à votre backend.
+        // Notez que vous aurez besoin d'un backend pour stocker les rendez-vous.
+    </script>
+</body>
+
+</html>
